@@ -1,0 +1,10 @@
+.base {
+    width: 1140px;
+    border: 1px solid #333;
+    padding: 8px 12px;
+    margin: auto;
+    height: 100%;
+}
+html, body {
+    height: 100%;
+}
