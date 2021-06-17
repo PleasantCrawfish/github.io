@@ -2,29 +2,186 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <title>Информационная сфера</title>
 </head>
 <body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="index.html">Статистика</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+            aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item active">
+                <a class="nav-link" href="index.html">Главная <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="inf.html"><b>Информационная сфера</b></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="Econom.html">Экономическая сфера</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="Soc.html">Социальная сфера</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="Soc-econom.html">Социально-экономическая инфраструктура</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="eco.html">Экологическая сфера</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+
+
+
+
+
 
 <div class="base">
-<iframe width="1140" height="541.25" id="frame"src="https://app.powerbi.com/reportEmbed?reportId=45f96905-a548-429a-8d70-77cbf377492c&autoAuth=true&ctid=815bad93-98c3-4e6c-98fe-0b7bf56430a0&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly93YWJpLXdlc3QtZXVyb3BlLXJlZGlyZWN0LmFuYWx5c2lzLndpbmRvd3MubmV0LyJ9" frameborder="0" allowFullScreen="true"></iframe>
-<input id="2014" type="submit" value="2014">
-<input id="2015" type="submit" value="2015">
-<input id="2016" type="submit" value="2016">
-<input id="2017" type="submit" value="2017">
-<input id="2018" type="submit" value="2018">
-<input id="2019" type="submit" value="2019">
-<script src="assets/script2.js"></script>
-<p>
-    Внедрение информационных технологий может дорого стоить и не всегда проходит легко, но потом чаще всего все затраченные усилия окупаются. Регионы ЮФО не очень активно внедряют новые технологии. Так, например, объем инвестиций во всех регионах на протяжении всех 6 лет очень низкий. Лишь два региона вкладывают большие деньги в информационные технологии- это Краснодарский край и Ростовская область, в то время как показатели остальных регионов очень низкие. Краснодарский край, особенно, выделяется на фоне остальных. Власти региона тратят большое количество денег на информационные технологии, в 2019 Краснодарский край занял 4 место по объему инвестиций по всей России.
-    </p><p>По остальным показателям ситуация примерно такая же, выделяется только показатель проникновения сотовой связи: тут на первое место выходит респ. Калмыкия
+    <h1 align="center">Статистика по информационной сфере регионов</h1>
+    <p> Ниже на странице расположены результаты по годам, которые были достигнуты регионами. На левом отчете находятся данные регионов в абсолютном значении, на правом отчете находятся
+        статистичекие данные нормированные данные с помощью линейного масштабирования.</p>
+    <div class="box" align="center" >
+        <h3>Абсолютные значения</h3>
+        <iframe  id="frame"src="https://clck.ru/VZcA5" frameborder="1" width="100%" height="450" ></iframe>
+        <button type="button" class="btn btn-dark" id="2014">2014</button>
+        <button type="button" class="btn btn-dark" id="2015">2015</button>
+        <button type="button" class="btn btn-dark" id="2016">2016</button>
+        <button type="button" class="btn btn-dark" id="2017">2017</button>
+        <button type="button" class="btn btn-dark" id="2018">2018</button>
+        <button type="button" class="btn btn-dark" id="2019">2019</button>
+    </div>
 
-</p>
+
+    <div class="box" align="center">
+        <h3>Нормированные значения</h3>
+        <iframe id="frame1"src="https://clck.ru/VZcG3" frameborder="1"  width="100%" height="450"></iframe>
+        <button type="button" class="btn btn-dark" id="2014r">2014</button>
+        <button type="button" class="btn btn-dark" id="2015r">2015</button>
+        <button type="button" class="btn btn-dark" id="2016r">2016</button>
+        <button type="button" class="btn btn-dark" id="2017r">2017</button>
+        <button type="button" class="btn btn-dark" id="2018r">2018</button>
+        <button type="button" class="btn btn-dark" id="2019r">2019</button>
+    </div>
+    <div id="accordion">
+        <div class="card">
+            <div class="card-header" id="headingOne">
+                <h5 class="mb-0">
+                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                        Разбор показателей
+                    </button>
+                </h5>
+            </div>
+
+            <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                <div class="card-body">
+                    <div class="text">
+                        <div>
+                            <h3>Объем услуг связи, оказанных населению на одного жителя, руб</h3>
+                            <div class="box1" align="center" >
+                                <iframe  src="https://clck.ru/VZcja" frameborder="1" width="100%" height="430" >
+                                </iframe>
+                                <h5>Объем услуг связи, оказанных населению на одного жителя, руб</h5>
+                            </div>
+                            <p>
+                                Объем услуг связи, оказанных населению на одного жителя показывает то, как часто жители пользуются системами связи.
+                                Под услугами связи понимаются многие аспекты технологической жизни общества.
+                                В услуги связи входят: радиосвязь, радиовещание, телевидение, спутниковая связь, телефонная связь и так далее.
+                                Объем услуг связи – очень важный показатель, который позволяет оценить уровень развития многих информационных систем. Но так как показатель, слишком обобщенный требуются и другие.
+                            </p>
+                        </div><br>
+                        <div>
+                            <h3>Проникновение подвижной радиотелефонной связи (сотовой) на  100 чел. населения, единиц</h3>
+                            <div class="box2" align="center" >
+                                <iframe  src="https://clck.ru/VZcdS" frameborder="1" width="100%" height="430" >
+                                </iframe>
+                                <h5>Проникновение подвижной радиотелефонной связи (сотовой) на  100 чел. населения, единиц</h5>
+                            </div>
+                            <p>
+                                Проникновение подвижной радиотелефонной связи (сотовой) на 100 чел
+                                показывает уровень развития сотовой связи,
+                                которая в текущее время становится доминирующей формой связи.
+                                Показатель отображает развитие инфраструктуры региона и его способность обеспечить жителей в их потребностях сотовой связи,
+                                а второй показывает уровень заинтересованности жителей в услугах сотовой связи и возможности их себе позволить.
+                            </p>
+                        </div><br>
+                        <div>
+                            <h3>Число абонентских станций (устройств), подключенных к сетям подвижной радиотелефонной (сотовой) связи, на 1000 человек населения</h3>
+                            <div class="box1" align="center" >
+                                <iframe  src="https://clck.ru/VZcfN" frameborder="1" width="100%" height="430" >
+                                </iframe>
+                                <h5>Число абонентских станций</h5>
+                            </div>
+                            <p>
+                                Показатель отображает уровень заинтересованности жителей в услугах сотовой связи и возможности их себе позволить. Показатель часто идет рука об руку с предыдущим показателем,
+                                но возможна такая ситуация, что инфраструктура была создана, но экономическое положение жителей не позволяет в полной мере насладиться преимуществами сотовой связи.
+                                Также есть фактор недоверия жителей к вышкам сотовой связи. Если уровень недоверия слишком высок в регионе, то это может вылиться в уничтожение вышек.
+                            </p>
+                        </div><br>
+                        <div>
+                            <h3>Объем инвестиций в основной капитал, направленных на приобретение информационного, компьютерного и телекоммуникационного оборудования </h3>
+                            <div class="box2" align="center" >
+                                <iframe  src="https://clck.ru/VZcaX" frameborder="1" width="100%" height="430" >
+                                </iframe>
+                                <h5>Объем инвестиций</h5>
+                            </div>
+                            <p>
+                                Объем инвестиций в основной капитал, направленных на приобретение информационного, компьютерного и телекоммуникационного оборудования,
+                                показывает сколько денег вкладывается в техническое оснащение. Чем выше этот показатель, тем быстрее внедрение технологических новшеств на предприятии.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingTwo">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Карта распределения по показателям
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                    <div class="card-body">
+                        <p>На отчете ниже можно посмотреть на карты распределения показателей по регионам ЮФО и всей России.</p><br>
+                        <div class="box3" align="center">
+                            <iframe  src="https://clck.ru/VZcqL" frameborder="1" width="100%" height="600" >
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header" id="headingThree">
+                <h5 class="mb-0">
+                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        График со средним значением по всем показателям
+                    </button>
+                </h5>
+            </div>
+            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                <div class="card-body">
+                    <p>На графике ниже берутся средние показатели по регионам за 6 лет и сравниваются между собой.</p>
+                    <div class="box3" align="center">
+                        <iframe  src="https://clck.ru/VZcts" frameborder="1" width="100%" height="600" >
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
-
+<script src="assets/script2.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 </html>

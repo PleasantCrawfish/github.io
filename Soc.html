@@ -2,29 +2,170 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Социальная сфера</title>
 </head>
 <body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="index.html">Статистика</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+            aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item active">
+                <a class="nav-link" href="index.html">Главная <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="inf.html">Информационная сфера</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="Econom.html">Экономическая сфера</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="Soc.html"><b>Социальная сфера</b></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="Soc-econom.html">Социально-экономическая инфраструктура</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="eco.html">Экологическая сфера</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+
+
+
+
+
+
 <div class="base">
-<iframe width="1140" height="541.25" id="frame"src="https://app.powerbi.com/reportEmbed?reportId=b47c57bf-f75f-4f94-a48b-c7a0c07e837b&autoAuth=true&ctid=815bad93-98c3-4e6c-98fe-0b7bf56430a0&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly93YWJpLXdlc3QtZXVyb3BlLXJlZGlyZWN0LmFuYWx5c2lzLndpbmRvd3MubmV0LyJ9" frameborder="0" allowFullScreen="true"></iframe>
-<input id="2014" type="submit" value="2014">
-<input id="2015" type="submit" value="2015">
-<input id="2016" type="submit" value="2016">
-<input id="2017" type="submit" value="2017">
-<input id="2018" type="submit" value="2018">
-<input id="2019" type="submit" value="2019">
-<script src="assets/script3.js"></script>
-<p>
-    В среднем по стране заболеваемость на 1000 человек населения принимает значения около 800. В ЮФО только один регион на протяжении 6 лет превышает это значение – это Ростовская область. Каждый год заболеваемость в регионе немного превышает среднее значение. Остальные регионы держаться на примерно одинаковом уровне, их значения немногим ниже средних значений по стране.
-</p><p>Средняя продолжительность жизни в России поднялась с 70 до 72 за период с 2014-2019. ЮФО показал себя очень хорошо в этом показателе средняя продолжительность жизни в округе превышает значение по России примерно на два года. Социальная политика в округе развита на достаточном уровне.
-    </p><p>В России большое количество разводов. Особенно заметно тенденция к расторжению брака стала заметна начиная с 2016 года, скачок произошел с 547 в 2015 до 642 в 2016. Значения показателя в ЮФО достаточно плохи и доходят вплоть до 755 разводов на 1000 браков. Единственный регион, который успешно сохраняет институт семьи – это Краснодарский край. В этом регионе количество разводов на порядок ниже, чем в других регионах ЮФО и ниже среднего значения по стране.
+    <h1 align="center">Статистика по социальной сфере регионов</h1>
+    <p> Ниже на странице расположены результаты по годам, которые были достигнуты регионами. На левом отчете находятся данные регионов в абсолютном значении, на правом отчете находятся
+        статистичекие данные нормированные данные с помощью линейного масштабирования.</p>
+    <div class="box" align="center" >
+        <h3>Абсолютные значения</h3>
+        <iframe  id="frame"src="https://clck.ru/VZaCD" frameborder="1" width="100%" height="450" ></iframe>
+        <button type="button" class="btn btn-dark" id="2014">2014</button>
+        <button type="button" class="btn btn-dark" id="2015">2015</button>
+        <button type="button" class="btn btn-dark" id="2016">2016</button>
+        <button type="button" class="btn btn-dark" id="2017">2017</button>
+        <button type="button" class="btn btn-dark" id="2018">2018</button>
+        <button type="button" class="btn btn-dark" id="2019">2019</button>
+    </div>
 
-</p>
+
+    <div class="box" align="center">
+        <h3>Нормированные значения</h3>
+        <iframe id="frame1"src="https://clck.ru/VZaWh" frameborder="1"  width="100%" height="450"></iframe>
+        <button type="button" class="btn btn-dark" id="2014r">2014</button>
+        <button type="button" class="btn btn-dark" id="2015r">2015</button>
+        <button type="button" class="btn btn-dark" id="2016r">2016</button>
+        <button type="button" class="btn btn-dark" id="2017r">2017</button>
+        <button type="button" class="btn btn-dark" id="2018r">2018</button>
+        <button type="button" class="btn btn-dark" id="2019r">2019</button>
+    </div>
+    <div id="accordion">
+        <div class="card">
+            <div class="card-header" id="headingOne">
+                <h5 class="mb-0">
+                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                        Разбор показателей
+                    </button>
+                </h5>
+            </div>
+
+            <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                <div class="card-body">
+                    <div class="text">
+                        <div>
+                            <h3>Заболеваемость на 1000 человек</h3>
+                            <div class="box1" align="center" >
+                                <iframe  src="https://clck.ru/VZap5" frameborder="1" width="100%" height="430" >
+                                </iframe>
+                                <h5>Заболеваемость на 1000 человек</h5>
+                            </div>
+                            <p>
+                                Заболеваемость на 1000 человек, как несложно догадаться, показывает уровень здравоохранения региона.
+                                Чем меньше людей болеет, тем более развит институт здравоохранения. Также на уровень заболеваемости влияет экологическая ситуация в регионе.
+                            </p>
+                        </div><br>
+                        <div>
+                            <h3>Ожидаемая продолжительность жизни при рождении</h3>
+                            <div class="box2" align="center" >
+                                <iframe  src="https://clck.ru/VZatK" frameborder="1" width="100%" height="430" >
+                                </iframe>
+                                <h5>Ожидаемая продолжительность жизни при рождении</h5>
+                            </div>
+                            <p>
+                                Ожидаемая продолжительность жизни при рождении показывает число лет, которое в среднем предстояло бы прожить одному человеку из
+                                поколения родившихся в данном году при условии, что на протяжении всей жизни этого поколения уровень смертности в каждом возрасте останется
+                                таким, как в год, для которого вычислен показатель. С помощью этого показателя можно эффективно оценить социальную политику региона.
+                            </p>
+                        </div><br>
+                        <div>
+                            <h3>Соотношение браков и разводов</h3>
+                            <div class="box1" align="center" >
+                                <iframe  src="https://clck.ru/VZb2G" frameborder="1" width="100%" height="430" >
+                                </iframe>
+                                <h5>Соотношение браков и разводов</h5>
+                            </div>
+                            <p>
+                                Соотношение браков и разводов показывает насколько крепкие семьи формируются в данном регионе.  Семья – это ячейка общества, которая формирует будущее страны.
+                                Семейная политика, проводимая государством может иметь серьезные последствия в перспективе.
+                                Государство должно стремиться создать благоприятные условия для создания семьи.
+                            </p>
+                        </div><br>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingTwo">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Карта распределения по показателям
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                    <div class="card-body">
+                        <p>На отчете ниже можно посмотреть на карты распределения показателей по регионам ЮФО и всей России.</p><br>
+                        <div class="box3" align="center">
+                            <iframe  src="https://clck.ru/VZbCa" frameborder="1" width="100%" height="600" >
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header" id="headingThree">
+                <h5 class="mb-0">
+                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        График со средним значением по всем показателям
+                    </button>
+                </h5>
+            </div>
+            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                <div class="card-body">
+                    <p>На графике ниже берутся средние показатели по регионам за 6 лет и сравниваются между собой.</p>
+                    <div class="box3" align="center">
+                        <iframe  src="https://clck.ru/VZbFM" frameborder="1" width="100%" height="600" >
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
-
+<script src="assets/script3.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 </html>

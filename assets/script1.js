@@ -4,9 +4,19 @@ let year3="https://app.powerbi.com/reportEmbed?reportId=142c3fa3-99d0-41f1-8d05-
     let year4="https://app.powerbi.com/reportEmbed?reportId=cf147aa4-e3e9-4a32-bb3c-d903a9f1b6ef&autoAuth=true&ctid=815bad93-98c3-4e6c-98fe-0b7bf56430a0&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly93YWJpLXdlc3QtZXVyb3BlLXJlZGlyZWN0LmFuYWx5c2lzLndpbmRvd3MubmV0LyJ9"
     let year5="https://app.powerbi.com/reportEmbed?reportId=bf6c4086-fe9a-471f-bde0-ccc013a9f665&autoAuth=true&ctid=815bad93-98c3-4e6c-98fe-0b7bf56430a0&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly93YWJpLXdlc3QtZXVyb3BlLXJlZGlyZWN0LmFuYWx5c2lzLndpbmRvd3MubmV0LyJ9"
     let year6="https://app.powerbi.com/reportEmbed?reportId=378e2e04-4b9c-4218-8d0a-2ad35853b306&autoAuth=true&ctid=815bad93-98c3-4e6c-98fe-0b7bf56430a0&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly93YWJpLXdlc3QtZXVyb3BlLXJlZGlyZWN0LmFuYWx5c2lzLndpbmRvd3MubmV0LyJ9"
-    document.getElementById("2014").onclick=function(){
-        document.getElementById('frame').src = year1
-    }
+
+
+let year11="https://clck.ru/VZW3C"
+let year22="https://clck.ru/VZW69"
+let year33="https://clck.ru/VZW6X"
+let year44="https://clck.ru/VZW6m"
+let year55="https://clck.ru/VZW7C"
+let year66="https://clck.ru/VZW7Q"
+
+
+document.getElementById("2014").onclick=function(){
+    document.getElementById('frame').src = year1
+}
 document.getElementById("2015").onclick=function(){
     document.getElementById('frame').src = year2
 }
@@ -24,3 +34,23 @@ document.getElementById("2019").onclick=function(){
 }
 
 
+
+
+document.getElementById("2014r").onclick=function(){
+    document.getElementById('frame1').src = year11
+}
+document.getElementById("2015r").onclick=function(){
+    document.getElementById('frame1').src = year22
+}
+document.getElementById("2016r").onclick=function(){
+    document.getElementById('frame1').src = year33
+}
+document.getElementById("2017r").onclick=function(){
+    document.getElementById('frame1').src = year44
+}
+document.getElementById("2018r").onclick=function(){
+    document.getElementById('frame1').src = year55
+}
+document.getElementById("2019r").onclick=function(){
+    document.getElementById('frame1').src = year66
+}

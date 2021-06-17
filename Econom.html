@@ -2,30 +2,190 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Экономическая сфера</title>
 </head>
 <body>
-<div class="base">
-<iframe width="1140" height="541.25" id="frame"src="https://app.powerbi.com/reportEmbed?reportId=fccd8293-9bab-47e3-a6b4-6ad378417d95&autoAuth=true&ctid=815bad93-98c3-4e6c-98fe-0b7bf56430a0&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly93YWJpLXdlc3QtZXVyb3BlLXJlZGlyZWN0LmFuYWx5c2lzLndpbmRvd3MubmV0LyJ9" frameborder="0" allowFullScreen="true"></iframe>
-<input id="2014" type="submit" value="2014">
-<input id="2015" type="submit" value="2015">
-<input id="2016" type="submit" value="2016">
-<input id="2017" type="submit" value="2017">
-<input id="2018" type="submit" value="2018">
-<input id="2019" type="submit" value="2019">
-<script src="assets/script1.js"></script>
-<p>
-    Экономическая ситуация в ЮФО оставляет желать лучшего. Большинство регионов ЮФО по всем показателям показывают значения ниже среднего по стране, хоть и не значительно.
-    </p><p>Интересная ситуация складывается с зарплатами и ценами, так, например, республика Калмыкия занимает последние места по среднедушевым доходам населения на протяжении всех 6 лет, а вот реальные денежные доходы одни из самых высоких в округе. А Краснодарский край несмотря на высокие среднедушевые доходы, в большинстве лет показывает низкие реальные доходы. Такая ситуация свидетельствует о сильной ценовой дифференциации цен в регионе и может привести к большим экономическим проблемам.
-</p><p>По обороту розничной торговли на протяжении всех 6 лет лидирует Краснодарский край, что и не удивительно, учитывая тот факт, что в этом регионе большое количество курортных городов.
-</p><p>Самый большой показатель по ВРП показывает Астраханская область и Краснодарский край на протяжении 6 лет, то один, то другой регион занимали первое место.
-</p><p>Подводя итог, можно сказать, что в Астраханской области и Краснодарском крае сосредоточены основные производственные силы округа, но при этом люди имеют невысокие зарплаты, при высоких ценах. Это свидетельствует о некомпетентности местных властей, если такая ситуация будет продолжаться могут пойти бунты. С другой стороны, республика Калмыкия показывает самые низкие цены в округе и одни из самых больших реальных доходов населения, сохраняя низкими остальные экономические показатели. Скорее всего, региону поступают значительные государственные дотации. Остальные регионы округа показывают не сильно отличающиеся друг от друга значения.
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="index.html">Статистика</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+            aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item active">
+                <a class="nav-link" href="index.html">Главная <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="inf.html">Информационная сфера</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="Econom.html"><b>Экономическая сфера</b></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="Soc.html">Социальная сфера</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="Soc-econom.html">Социально-экономическая инфраструктура</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="eco.html">Экологическая сфера</a>
+            </li>
+        </ul>
+    </div>
+</nav>
 
-</p>
+
+
+
+
+
+
+<div class="base">
+    <h1 align="center">Статистика по экономической сфере регионов</h1>
+    <p> Ниже на странице расположены результаты по годам, которые были достигнуты регионами. На левом отчете находятся данные регионов в абсолютном значении, на правом отчете находятся
+        статистичекие данные нормированные данные с помощью линейного масштабирования.</p>
+    <div class="box" align="center" >
+        <h3>Абсолютные значения</h3>
+        <iframe  id="frame"src="https://clck.ru/VZVrA" frameborder="1" width="100%" height="450" ></iframe>
+        <button type="button" class="btn btn-dark" id="2014">2014</button>
+        <button type="button" class="btn btn-dark" id="2015">2015</button>
+        <button type="button" class="btn btn-dark" id="2016">2016</button>
+        <button type="button" class="btn btn-dark" id="2017">2017</button>
+        <button type="button" class="btn btn-dark" id="2018">2018</button>
+        <button type="button" class="btn btn-dark" id="2019">2019</button>
+    </div>
+
+
+    <div class="box" align="center">
+        <h3>Нормированные значения</h3>
+        <iframe id="frame1"src="https://clck.ru/VZW3C" frameborder="1"  width="100%" height="450"></iframe>
+        <button type="button" class="btn btn-dark" id="2014r">2014</button>
+        <button type="button" class="btn btn-dark" id="2015r">2015</button>
+        <button type="button" class="btn btn-dark" id="2016r">2016</button>
+        <button type="button" class="btn btn-dark" id="2017r">2017</button>
+        <button type="button" class="btn btn-dark" id="2018r">2018</button>
+        <button type="button" class="btn btn-dark" id="2019r">2019</button>
+    </div>
+    <div id="accordion">
+        <div class="card">
+            <div class="card-header" id="headingOne">
+                <h5 class="mb-0">
+                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                        Разбор показателей
+                    </button>
+                </h5>
+            </div>
+
+            <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                <div class="card-body">
+                    <div class="text">
+                        <div>
+                            <h3>ВРП на душу населения</h3>
+                            <div class="box1" align="center" >
+                                <iframe  src="https://clck.ru/VZXtC" frameborder="1" width="100%" height="430" >
+                                </iframe>
+                                <h5>ВРП на душу населения</h5>
+                            </div>
+                            <p>
+                                Валовой региональный продукт на душу населения. ВРП является обобщающим показателем экономической деятельности региона,
+                                характеризующий процесс производства товаров и услуг для конечного использования. ВРП рассчитывается в текущих основных ценах
+                                (номинальный объем ВРП), а также в сопоставимых ценах (реальный объем ВРП)
+                            </p>
+                        </div><br>
+                        <div>
+                            <h3>Оборот розничной торговли на душу населения</h3>
+                            <div class="box2" align="center" >
+                                <iframe  src="https://clck.ru/VZY4j" frameborder="1" width="100%" height="430" >
+                                </iframe>
+                                <h5>Оборот розничной торговли</h5>
+                            </div>
+                            <p>
+                                Оборот розничной торговли на душу населения, согласно Росстату означает выручку от продажи товаров населению для личного потребления
+                                или использования в домашнем хозяйстве за наличный расчет или оплаченных по кредитным карточкам,
+                                расчетным чекам банков, по перечислениям со счетов вкладчиков, по поручению физического лица без открытия счета,
+                                посредством платежных карт . Этот показатель служит индикатором развития сектора торговли в регионе.
+                            </p>
+                        </div><br>
+                        <div>
+                            <h3>Реальные денежные доходы населения по субъектам Российской федерации (в процентах к предыдущему году)</h3>
+                            <div class="box1" align="center" >
+                                <iframe  src="https://clck.ru/VZY8F" frameborder="1" width="100%" height="430" >
+                                </iframe>
+                                <h5>Реальные денежные доходы</h5>
+                            </div>
+                            <p>
+                                Денежные доходы населения не всегда точно показывают экономическое положение населения, потому что доходы могут быть высокими,
+                                но и цены на товары не будут отставать.
+                                Чтобы оценить точнее денежные средства населения был взят второй показатель, реальные денежные доходы населения по субъектам Российской федерации,
+                                который исчисляется путем деления индекса номинального размера (т. е. фактически сложившегося в отчетном периоде) денежных доходов населения на индекс
+                                потребительских цен за соответствующий временной период
+                            </p>
+                        </div><br>
+                        <div>
+                            <h3>Среднедушевые денежные доходы населения</h3>
+                            <div class="box2" align="center" >
+                                <iframe  src="https://clck.ru/VZYDW" frameborder="1" width="100%" height="430" >
+                                </iframe>
+                                <h5>Среднедушевые денежные доходы населения</h5>
+                            </div>
+                            <p>
+                                Среднедушевые денежные доходы населения, призван оценить экономическое положение жителей региона.
+                                Согласно Росстату, денежные доходы населения включают доходы лиц, занятых предпринимательской деятельностью, выплаченную заработную плату наемных работников
+                                (начисленную заработную плату скорректированную на изменение просроченной задолженности), социальные выплаты
+                                (пенсии, пособия, стипендии, страховые возмещения и прочие выплаты), доходы от собственности в виде процентов
+                                по вкладам, ценным бумагам, дивидендов и другие доходы ("скрытые" доходы, доходы от продажи иностранной валюты, денежные переводы, а также доходы,
+                                не имеющие широкого распространения)
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingTwo">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Карта распределения по показателям
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                    <div class="card-body">
+                        <p>На отчете ниже можно посмотреть на карты распределения показателей по регионам ЮФО и всей России.</p><br>
+                        <div class="box3" align="center">
+                            <iframe  src="https://clck.ru/VZHjb" frameborder="1" width="100%" height="600" >
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header" id="headingThree">
+                <h5 class="mb-0">
+                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        График со средним значением по всем показателям
+                    </button>
+                </h5>
+            </div>
+            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                <div class="card-body">
+                    <p>На графике ниже берутся средние показатели по регионам за 6 лет и сравниваются между собой.</p>
+                    <div class="box3" align="center">
+                        <iframe  src="https://clck.ru/VZZNa" frameborder="1" width="100%" height="600" >
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
+<script src="assets/script1.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 </html>

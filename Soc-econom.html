@@ -2,30 +2,184 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Социально-экономическая инфраструктура</title>
 </head>
 <body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="index.html">Статистика</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+            aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item active">
+                <a class="nav-link" href="index.html">Главная <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="inf.html">Информационная сфера</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="Econom.html">Экономическая сфера</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="Soc.html">Социальная сфера</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="Soc-econom.html"><b>Социально-экономическая инфраструктура</b></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="eco.html">Экологическая сфера</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+
+
+
+
+
+
 <div class="base">
-<iframe width="1140" height="541.25" id="frame"src="https://app.powerbi.com/reportEmbed?reportId=09768987-cd11-4141-b7ac-8e5201c9a389&autoAuth=true&ctid=815bad93-98c3-4e6c-98fe-0b7bf56430a0&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly93YWJpLXdlc3QtZXVyb3BlLXJlZGlyZWN0LmFuYWx5c2lzLndpbmRvd3MubmV0LyJ9" frameborder="0" allowFullScreen="true"></iframe>
-<input id="2014" type="submit" value="2014">
-<input id="2015" type="submit" value="2015">
-<input id="2016" type="submit" value="2016">
-<input id="2017" type="submit" value="2017">
-<input id="2018" type="submit" value="2018">
-<input id="2019" type="submit" value="2019">
-<script src="assets/script4.js"></script>
-<p>
-    Дороги-это извечная проблема России. За 6 лет среднее значение дорог местного значения, не соответствующих норме примерно равно 44. ЮФО сильно не выделяется по уровню качества дорог от остальных округов, но внутри округа качество очень сильно варьируется. Самые плохие дороги расположены в Астраханской области и в респ. Калмыкии. В 2019 Астраханская область вошла в 10 регионов с самыми плохими дорогами. В то же время в Краснодарском крае одни из лучших дорог в России. Остальные регионы находятся по середине. Такой разброс в среднем и дает нейтральные результаты.
-</p><p>Численность населения на больничную койку – очень важный показатель, особенно в период пандемии. Так к 2019 году на одну койку приходилось почти 123 человека в среднем по России. ЮФО по этому показателю не очень преуспел. Самый лучший результат показала Волгоградская и Астраханская области, они на протяжении всего периода показатель находился ниже среднего по России. Хуже всех дела обстоят в Краснодарском крае и в респ. Адыгеи, их показатели значительно превышают средние по стране. Можно с уверенностью заявить, что эти регионы вошли в период пандемии неподготовленными.
-    Число персональных компьютеров на 100 работников позволяет понять насколько активно внедряются технологии на предприятиях. Москва по этому показателю находится на голову выше остальных регионов. ЮФО показывает себя вполне сносно на фоне остальных регионов. В целом значения практически одинаковы в регионах ЮФО, единственное респ. Калмыкия показывает более высокие показатели нежели другие регионы.
-    </p><p>Площадь жилья показывает насколько население обеспечено жильем. ЮФО проходит максимально по середине общего значения страны, ни один из регионов не показывает сильного отрыва или отставания.
+    <h1 align="center">Статистика по социально-экономической инфраструктуре регионов</h1>
+    <p> Ниже на странице расположены результаты по годам, которые были достигнуты регионами. На левом отчете находятся данные регионов в абсолютном значении, на правом отчете находятся
+        статистичекие данные нормированные данные с помощью линейного масштабирования.</p>
+    <div class="box" align="center" >
+        <h3>Абсолютные значения</h3>
+        <iframe  id="frame"src="https://clck.ru/VZdSk" frameborder="1" width="100%" height="450" ></iframe>
+        <button type="button" class="btn btn-dark" id="2014">2014</button>
+        <button type="button" class="btn btn-dark" id="2015">2015</button>
+        <button type="button" class="btn btn-dark" id="2016">2016</button>
+        <button type="button" class="btn btn-dark" id="2017">2017</button>
+        <button type="button" class="btn btn-dark" id="2018">2018</button>
+        <button type="button" class="btn btn-dark" id="2019">2019</button>
+    </div>
 
-</p>
+
+    <div class="box" align="center">
+        <h3>Нормированные значения</h3>
+        <iframe id="frame1"src="https://clck.ru/VZdeJ" frameborder="1"  width="100%" height="450"></iframe>
+        <button type="button" class="btn btn-dark" id="2014r">2014</button>
+        <button type="button" class="btn btn-dark" id="2015r">2015</button>
+        <button type="button" class="btn btn-dark" id="2016r">2016</button>
+        <button type="button" class="btn btn-dark" id="2017r">2017</button>
+        <button type="button" class="btn btn-dark" id="2018r">2018</button>
+        <button type="button" class="btn btn-dark" id="2019r">2019</button>
+    </div>
+    <div id="accordion">
+        <div class="card">
+            <div class="card-header" id="headingOne">
+                <h5 class="mb-0">
+                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                        Разбор показателей
+                    </button>
+                </h5>
+            </div>
+
+            <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                <div class="card-body">
+                    <div class="text">
+                        <div>
+                            <h3>Доля автомобильных дорог общего пользования, не отвечающих нормативным требованиям, по субъектам Российской Федерации (местного значения)</h3>
+                            <div class="box1" align="center" >
+                                <iframe  src="https://clck.ru/VZdsy" frameborder="1" width="100%" height="430" >
+                                </iframe>
+                                <h5>Доля автомобильных дорог</h5>
+                            </div>
+                            <p>
+                                Доля автомобильных дорог общего пользования, не отвечающих нормативным требованиям, по субъектам Российской Федерации (местного значения),
+                                является очень важным для оценки инфраструктуры. Дороги – это артерии города, от их качества зависит как быстро люди будут добираться до места работы,
+                                как быстро будут доставлены товары до магазинов и т.д. Чем лучше дороги в городе, тем лучше функционирует инфраструктура города. Показатель оценивает
+                                количество дорог, которое не соответствует нормам качества, поэтому чем он ниже, тем лучше.
+                            </p>
+                        </div><br>
+                        <div>
+                            <h3>Численность населения на одну больничную койку</h3>
+                            <div class="box2" align="center" >
+                                <iframe  src="https://clck.ru/VZdu7" frameborder="1" width="100%" height="430" >
+                                </iframe>
+                                <h5>Численность населения на одну больничную койку</h5>
+                            </div>
+                            <p>
+                                Численность населения на одну больничную койку, нужен для оценки работоспособности больниц.
+                                Чем больше населения приходится на одну больничную койку, тем ниже вероятность получить качественное лечения жителями региона.
+                                В случае какой-либо пандемии, этот показатель становиться еще важнее: неукомплектованные больницы неспособны принять большое количество заболевших,
+                                и многие из них продолжают заражать здоровую часть населения.
+                            </p>
+                        </div><br>
+                        <div>
+                            <h3>Число персональных компьютеров на 100 работников</h3>
+                            <div class="box1" align="center" >
+                                <iframe  src="https://clck.ru/VZduV" frameborder="1" width="100%" height="430" >
+                                </iframe>
+                                <h5>Число персональных компьютеров на 100 работников</h5>
+                            </div>
+                            <p>
+                                Показатель число персональных компьютеров на 100 работников нужен для оценки внедрения технологических новшеств на предприятиях.
+                                В большинстве сфер компьютеры могут повысить работоспособность работников, поэтому чем выше этот показатель, тем лучше.
+                            </p>
+                        </div><br>
+                        <div>
+                            <h3>Общая площадь жилых помещений приходящаяся в среднем на одного жителя </h3>
+                            <div class="box2" align="center" >
+                                <iframe  src="https://clck.ru/VZdtN" frameborder="1" width="100%" height="430" >
+                                </iframe>
+                                <h5>Общая площадь жилых помещений приходящаяся в среднем на одного жителя</h5>
+                            </div>
+                            <p>
+                                общая площадь жилых помещений, приходящаяся в среднем на одного жителя, нужен для оценки жилищных условий населения.
+                                Потребность в жилье - это одна из основополагающих потребностей людей. Чем больше площадь жилых помещений, тем счастливее себя чувствуют люди в регионе.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingTwo">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Карта распределения по показателям
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                    <div class="card-body">
+                        <p>На отчете ниже можно посмотреть на карты распределения показателей по регионам ЮФО и всей России.</p><br>
+                        <div class="box3" align="center">
+                            <iframe  src="https://clck.ru/VZdzv" frameborder="1" width="100%" height="600" >
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header" id="headingThree">
+                <h5 class="mb-0">
+                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        График со средним значением по всем показателям
+                    </button>
+                </h5>
+            </div>
+            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                <div class="card-body">
+                    <p>На графике ниже берутся средние показатели по регионам за 6 лет и сравниваются между собой.</p>
+                    <div class="box3" align="center">
+                        <iframe  src="https://clck.ru/VZe2q" frameborder="1" width="100%" height="600" >
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
-
+<script src="assets/script4.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 </html>
